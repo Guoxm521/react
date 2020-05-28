@@ -1,6 +1,5 @@
 import React from 'react' 
 import {Button} from 'antd'
-import './../../../node_modules/antd/dist/antd.less';
 export default class Login extends React.Component {
  render() {
     return(
