@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button, message, Row, Col } from "antd";
-import './index.less'
+import './index.less';
+import Utils from './../../utils/utils.js'
 
 export default class Messages extends React.Component {
   constructor() {
@@ -9,7 +10,7 @@ export default class Messages extends React.Component {
       username: "胡萝卜菜",
     };
     setInterval(()=>{
-      let systemTime = new Date().getTime();
+      let systemTime = Utils.formatDate(new Date().getTime());
       this.setState({
         systemTime
       })
